@@ -1,16 +1,17 @@
-/* Magic Index – Find Index In Sorted Array Such That A[i] = i. */
+/* Find the local minima in a given array */
 /*
-Link : https://algorithms.tutorialhorizon.com/magic-index-find-index-in-sorted-array-such-that-ai-i/
+Link : https://algorithms.tutorialhorizon.com/find-the-local-minima-in-a-given-array/
 
-Objective: Given a sorted array of distinct integers, Find the Magic index or Fixed point in the array.
+Objec­tive:  Given an array of integer write an algorithm to find the local minima.
 
-Magic Index or Fixed Point: Magic index or a Fixed point in an array is an index i in the array such that A[i] = i.
+Local Minima: An element is considered as local minima if it is less than both of its neighbors (if neighbors exist).
 
  */
 
 public class TopHorArrBinarySearch {
     public static void main(String[] args){
-        int[] inpArr = {11, 4, 2, 5, 11, 13, 1};
+        //int[] inpArr = {11, 4, 2, 5, 11, 13, 1};
+        int[] inpArr = {11, 4, 2, 5, 11, 1, 5};
         int res = new TopHorArrBinarySearch().findLowNum(inpArr, 0, inpArr.length);
         System.out.println("The lowest element is : " + res);
     }
